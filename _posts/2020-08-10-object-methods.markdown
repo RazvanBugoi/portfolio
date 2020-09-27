@@ -16,22 +16,16 @@ let obj = {
     return `Is ${obj.name} working ?`
   }
 };
+
+this is a property: obj.name outcome will be 'Razvan'
+this is a property: obj.age outcome will be 25
+this is a method: obj.isWorking() outcome will be 'Is Razvan working?' 
 {% endhighlight %}
 
-Where `YEAR` is a four-digit number, `MONTH` and `DAY` are both two-digit numbers, and `MARKUP` is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+If we would try and call the `isWorking` function on it's own, we would get an error saying that the function is not defined. That is true because the function can only be found inside the `obj` object, which is what makes it a method.
+This is the difference between methods and functions.
 
-Jekyll also offers powerful support for code snippets:
+You can read more about the topic below:
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
+[javascript-info]: https://javascript.info/object-methods
 
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
-
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
