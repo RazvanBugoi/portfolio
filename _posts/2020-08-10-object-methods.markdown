@@ -25,7 +25,7 @@ this is a method: obj.isWorking() outcome will be 'Is Razvan working?'
 If we would try and call the `isWorking` function on it's own, we would get an error saying that the function is not defined. That is true because the function can only be found inside the `obj` object, which is what makes it a method.
 This is the difference between methods and functions.
 
-You can read more about the topic [here][javascript-info]:
+You can read more about the topic [here][javascript-info]
 
 [javascript-info]: https://javascript.info/object-methods
 
